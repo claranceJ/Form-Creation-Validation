@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         //Display feedback
         if (isValid) {
-            feedbackDiv.textContent = "Registration Successful!";
+            feedbackDiv.textContent = "Registration successful";
             feedbackDiv.style.color = "#28a745";
         }else{
             feedbackDiv.innerHTML = messages.join("<br>");
