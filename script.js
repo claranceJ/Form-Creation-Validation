@@ -1,5 +1,5 @@
 // Step 1: Ensure the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
 
     // Step 2: Select the form element
     const form = document.getElementById('registration-form');
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const feedbackDiv = document.getElementById('form-feedback');
 
     // Step 4: Add event listener to the form for the 'submit' event
-    form.addEventListener('submit', (event) => {
+    form.addEventListener('submit', function(event){
         // Step 5: Prevent the default form submission
         event.preventDefault();
         
