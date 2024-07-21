@@ -27,27 +27,26 @@ document.addEventListener('DOMContentLoaded', function() {
             messages.push('Username must be at least 3 characters long.');
         }
         // ste 9: Email validation
-        if (!email.includes('@') || !email.includes('.')){
+        if (!email.includes('@') || !email.includes('.')) {
             isValid = false;
             messages.push('Please enter a valid email address.')
         }
         //step 10: Password validation
-        if (password.length < 8){
+        if (password.length < 8) {
             isValid = false;
             messages.push('Password must be at least 8 characters long')
         }
-
-         //make feedback visible
+        //make feedback visible
         feedbackDiv.style.display = 'block';
 
         //Display feedback
-        if (isValid){
+        if (isValid === true) {
             feedbackDiv.textContent = 'Registration Successful!';
             feedbackDiv.style.color = '#28a745';
-        }
-        else{
+        }else{
             feedbackDiv.innerHTML = messages.join('<br>');
             feedbackDiv.style.color = '#dc3545';
         }
+        
     });
 });
